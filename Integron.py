@@ -155,7 +155,7 @@ def handle_prompt_submission(prompt_text):
     )
 
     # Local spinner near the chat / button instead of global "Running …"
-    with st.spinner("Agent is thinking..."):
+    with st.spinner("Integron Agent is thinking..."):
         data = get_assistant_response(st.session_state.session_id, messages_tuple)
     
     # Store the full response (for raw view in sidebar)
